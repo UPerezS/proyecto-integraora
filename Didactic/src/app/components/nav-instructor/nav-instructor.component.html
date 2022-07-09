@@ -1,0 +1,39 @@
+<div class="main-container d-flex collapse navbar-collapse">
+    <div class="sidebar" id="side_nav">
+        <div class="content">
+            <div class="header-box px-2 pt-3 pb-4">
+                <h1 class="fs-4" style="background-color: blueviolet;"><span class="text-white">Instructor</span></h1>
+                <button class="btn d-mb-none d-block close-btn px-1 py-0 text-white"><i class="fal fa-stream"></i></button>
+                <ul class="list-unstyled px-2">
+                    <li class="" class="nav-item dropdown">
+                        <a href="/instructor" class="text-decoration-none px-3 py-2 d-block" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                            Agregar temas
+                        </a>
+                        <ul class="dropdown-menu" >
+                            <li><a class="dropdown-item" href="/instructor" style="color: black;">Agregar Actividad</a></li>
+                            <li><a class="dropdown-item" href="/instructor" style="color: black;">Agregar Juego</a></li>
+                            <li><a class="dropdown-item" href="/instructor-quiz" style="color: black;">Agregar quiz</a></li>
+                            <li><a class="dropdown-item" href="/instructor crear laboratorio" style="color: black;">Agregar Laboratorio</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="/instructor" class="text-decoration-none px-3 py-2 d-block">Crear curso</a></li>
+                    <li class=""><a href="/instructor" class="text-decoration-none px-3 py-2 d-block">Inscribir alumno a curso</a></li>
+                    <li class=""><a href="/instructor" class="text-decoration-none px-3 py-2 d-block">Seguimiento al alumno</a></li>
+                    <li class=""><a href="/instructor" class="text-decoration-none px-3 py-2 d-block">Agregar comentarios a tema</a></li>
+                    <li class=""><a href="/instructor" class="text-decoration-none px-3 py-2 d-block">Validar solicitud</a></li>
+                </ul>
+                <hr class="h-color mx-3">
+            </div>
+        </div>
+        <div class="content">
+
+        </div>
+    </div>
+</div>
+
+<script>
+    $(".sidebar ul li").on('click',function(){
+        $(".sidebar ul li.active").removeClass('active');
+        $(this).addClass('active');
+    })
+</script>
